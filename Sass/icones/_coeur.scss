@@ -1,0 +1,37 @@
+.span-coeur {
+    position: relative;
+    left: 270px;
+    top: -40px;
+  }
+  .body.index-page i {
+    position: absolute;
+  }
+  
+  .icone-coeur {
+    position: relative;
+    bottom: 50px;
+    left: 290px;
+    cursor: pointer;
+  }
+  
+  
+  .coeur-rempli {
+    opacity: 0;
+  }
+  
+  .coeur-rempli:hover,
+  .coeur-rempli.clicked {
+    opacity: 1;
+    color:#9474FF;
+  }
+  
+  .coeur-vide:hover,
+  .coeur-vide.clicked {
+    opacity: 1;
+    color: #9474FF;
+  }
+  
+  .coeur-vide.clicked {
+    transform: scale(1.2); /* Ajustez la mise à l'échelle selon vos préférences */
+  }
+  

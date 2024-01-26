@@ -74,55 +74,11 @@
     left: -12px;
   }
 
-  
 
   .btn-fonctionnement-store {
     color:#9474FF
   }
   
-  
-
-  .rond-un:before {
-    content: "❶";
-    font-size: 25px;
-    color: #9474FF;
-  }
-  
-  .rond-deux:before {
-      content : "\002777";
-      font-size: 25px;
-      color: #9474FF;
-    }
-  
-  .rond-trois:before {
-    content : "\002778";
-    font-size: 25px;
-    color: #9474FF;
-  }
-  
-  .position-symbole {
-    position: relative;
-  }
-  
-  .position-symbole-abso {
-    position: absolute;
-    left: 5px;
-    top: 30px;
-  }
-  
-  .position-symbole-abso-deux {
-    position: absolute;
-      top: 115px;
-      left: 10px;
-  }
-  
-  .position-symbole-abso-trois {
-    position: absolute;
-    top: 200px;
-    left: 10px;
-  }
-  
- 
   
   /*RESTAURANTS*/
   
@@ -174,64 +130,20 @@ margin-bottom: -5px;
     margin-bottom: 60px;
   }
 
-  /*ICONE COEUR*/
-  
-  .span-coeur {
-    position: relative;
-    left: 270px;
-    top: -40px;
-  }
-  .body.index-page i {
-    position: absolute;
-  }
-  
-  .icone-coeur {
-    position: relative;
-    bottom: 50px;
-    left: 290px;
-    cursor: pointer;
-  }
   
   
-  .coeur-rempli {
-    opacity: 0;
-  }
   
-  .coeur-rempli:hover,
-  .coeur-rempli.clicked {
-    opacity: 1;
-    color:#9474FF;
-  }
-  
-  .coeur-vide:hover,
-  .coeur-vide.clicked {
-    opacity: 1;
-    color: #9474FF;
-  }
-  
-  .coeur-vide.clicked {
-    transform: scale(1.2); /* Ajustez la mise à l'échelle selon vos préférences */
-  }
-  
-  
- /* //Tablette
+ /*TABLETTE*/
+
   @media (min-width: 769px) and (max-width: 1023px) {
-    .titre-restaurant {
-      color: red;
-    }
+    
   }
 
-  //Desktop
-  @media screen and (min-width: 1024px) {
-    .titre-restaurant {
-      color: blue;
-    }
-  } */
-
+  /*DESKTOP*/
   
-
   @media screen and (min-width: 1024px) {
 
+    
     .btn {
         box-shadow: none;
     }
@@ -259,15 +171,6 @@ h2 {
     margin-left: 200px;
   }
   
-  .position-symbole-abso-deux {
-    top: 0px;
-    left: 390px;
-  }
-  
-  .position-symbole-abso-trois {
-    top: 0px;
-    left: 900px;
-  }
   
   .titre-restaurant {
     display: flex;
