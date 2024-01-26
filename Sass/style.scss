@@ -1,0 +1,20 @@
+/*BODY*/
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+@import "./abstract/variables";
+@import "./pages/home";
+@import "./pages/menu";
+@import "./header/menu";
+@import "./header/home";
+@import "./boutton/home";
+@import "./boutton/menu";
+@import "./footer/footer";
+@import "./abstract/mixins";
+
+

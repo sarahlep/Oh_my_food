@@ -1,0 +1,15 @@
+.btn-violet_menu {
+    color: white;
+    background:$btn-background;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px;
+    border-radius: 20px;
+    height: 40px;
+    width: 190px;
+    transition-property: transform;
+    &:hover {
+        transform: scale(1.01);
+         filter: brightness(1.1);
+    }
+    margin-bottom: 40px;
+  }

@@ -1,0 +1,178 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@300&family=Shrikhand&display=swap');
+
+
+
+
+
+
+
+
+
+/*SECTION*/
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('chemin/vers/votre-police/Shrikhand-Regular.ttf') format('truetype');
+}
+
+h2.texte-menu {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.img-haut {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.fond-blanc {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fond-blanc-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marge-h {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.marge-p {
+  margin-top: -25px;
+  margin-left: 20px;
+}
+
+.marge-euro {
+  margin-right: 20px ;
+  font-weight: bold;
+}
+
+
+.texte-avec-bordure {
+  position: relative;
+}
+
+.texte-avec-bordure::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 5%;
+  border-bottom: 3px solid lightgreen; /* Bordure solide de couleur noire */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.retard1,
+.retard2,
+.retard3,
+.retard4
+.retard5
+.retard6
+.retard7
+.retard8
+{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Ajoutez un délai différent pour chaque élément retardé */
+.retard1 {
+  animation-delay: 0.3s;
+}
+
+.retard2 {
+  animation-delay: 0.6s;
+}
+
+.retard3 {
+  animation-delay: 0.9s;
+}
+
+.retard4 {
+  animation-delay: 1s;
+}
+
+/* Déclenchez l'animation lorsque l'élément devient visible */
+.retard1,
+.retard2,
+.retard3,
+.retard4 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  position:relative;
+  border-radius: 30px 30px 0 0;
+z-index: 1;
+}
+
+
+.position-btn-commander {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-position {
+    position: relative;
+    top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .main {
+width: 70%;
+display: flex;
+  }
+
+  .fond-blanc-position {
+    width: 800px;
+  }
+  
+  .centre {
+    display: flex;
+    justify-content: center;
+  }
+
+ h2.texte-menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+ }
+    
+.ajustement-span {
+    margin-top: 20px;
+}
+}
