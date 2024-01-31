@@ -528,35 +528,15 @@ h2.texte-menu {
     /* Autres styles pour le bureau spécifiquement pour .footer-logo */
   }
 }
-.span-coeur {
-  /*Pour la page menu*/
-  /********/
-}
-.span-coeur .menu-page {
-  position: relative;
-}
-.span-coeur .coeur-rempli {
+.coeur-rempli {
   opacity: 0;
   position: absolute;
   font-size: 25px;
   right: 50px;
   bottom: 20px;
 }
-.span-coeur .coeur-rempli_menu {
-  opacity: 0;
-  position: absolute;
-  font-size: 25px;
-  right: 50px;
-  bottom: 20px;
-}
-.span-coeur .coeur-vide {
-  opacity: 1;
-  position: absolute;
-  font-size: 25px;
-  right: 50px;
-  bottom: 20px;
-}
-.span-coeur_menu {
+
+.coeur-vide {
   opacity: 1;
   position: absolute;
   font-size: 25px;
@@ -567,6 +547,7 @@ h2.texte-menu {
 .span-coeur:hover .coeur-vide {
   opacity: 0;
 }
+
 .span-coeur:hover .coeur-rempli {
   opacity: 1;
   color: #9747FF;
@@ -639,5 +620,45 @@ h2.texte-menu {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.menu-page {
+  position: relative;
+}
+
+.coeur-rempli_menu {
+  opacity: 0;
+  position: absolute;
+  font-size: 25px;
+  left: 240px;
+  bottom: 20px;
+}
+
+.coeur-vide_menu {
+  opacity: 1;
+  position: absolute;
+  font-size: 25px;
+  left: 240px;
+  bottom: 20px;
+}
+
+.span-coeur:hover .coeur-vide_menu {
+  opacity: 0;
+}
+
+.span-coeur:hover .coeur-rempli_menu {
+  opacity: 1;
+  color: #9747FF;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .coeur-rempli_menu {
+    left: 450px;
+    bottom: 45px;
+  }
+  .coeur-vide_menu {
+    left: 450px;
+    bottom: 45px;
   }
 }/*# sourceMappingURL=style.css.map */

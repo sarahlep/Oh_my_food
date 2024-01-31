@@ -1,0 +1,49 @@
+.menu-page{
+    position: relative;
+  
+  }
+
+
+  .coeur-rempli_menu {
+    opacity: 0;
+    position: absolute;
+    font-size: 25px;
+    left: 240px;
+    bottom: 20px;
+
+  }
+
+  .coeur-vide_menu {
+    opacity: 1;
+    position: absolute;
+    font-size: 25px;
+    left: 240px;
+    bottom: 20px;
+  }
+
+
+  .span-coeur:hover .coeur-vide_menu {
+    opacity: 0;
+  }
+  
+  .span-coeur:hover .coeur-rempli_menu {
+    opacity: 1;
+    color: #9747FF;
+  }
+
+/*DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+    .coeur-rempli_menu {
+left: 450px;
+bottom: 45px;
+    }
+
+    .coeur-vide_menu {
+        left: 450px;
+        bottom: 45px;
+    }
+
+    
+}
