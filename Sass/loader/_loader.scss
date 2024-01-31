@@ -1,0 +1,77 @@
+.tasse {
+    position: absolute;
+    height: 140px;
+    width: 180px;
+    border: 6px solid purple;
+    top: 50%;
+    left: 45%;
+    border-radius: 0px 0px 70px 70px;
+    background: url(/images/coffee.png);
+    box-shadow: 0px 0px 0px 6px black;
+    background-repeat: repeat-x;
+    background-position: 0px 140px;
+    animation: fadeInAndOut 1s forwards, fillAndLoader 2.5s infinite, spin 1.2s linear infinite;
+    opacity: 0;
+}
+
+
+@keyframes fadeInAndOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fillAndLoader {
+    0%, 100% {
+        background-position: 0px 140px;
+        opacity: 1;
+    }
+    20% {
+        background-position: -450px 100px;
+        opacity: 0.5;
+    }
+    40% {
+        background-position: -900px 50px;
+        opacity: 1;
+    }
+    80% {
+        background-position: -1350px -40px;
+        opacity: 0.5;
+    }
+    100% {
+        background-position: 0px 140px;
+        opacity: 1;
+    }
+}
+
+.poignee {
+    height: 70px;
+    width: 40px;
+    background-color: transparent;
+    border: 6px solid black;
+    position: relative;
+    left: 186px;
+    top: 2px;
+    border-radius: 0px 25px 80px 0px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    
+ 
+
+   

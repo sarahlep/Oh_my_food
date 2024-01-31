@@ -1,37 +1,63 @@
 .span-coeur {
-    position: relative;
-    left: 270px;
-    top: -40px;
-  }
-  .body.index-page i {
-    position: absolute;
-  }
-  
-  .icone-coeur {
-    position: relative;
-    bottom: 50px;
-    left: 290px;
-    cursor: pointer;
-  }
+ 
+
+
+  /*Pour la page menu*/
+.menu-page{
+  position: relative;
+
+}
+
+  /********/
+
   
   
   .coeur-rempli {
     opacity: 0;
-  }
+    position: absolute;
+    font-size: 25px;
+    right: 50px;
+    bottom: 20px;
   
-  .coeur-rempli:hover,
-  .coeur-rempli.clicked {
+
+  &_menu {
+    opacity: 0;
+    position: absolute;
+    font-size: 25px;
+    right: 50px;
+    bottom: 20px;
+
+  }
+
+}
+  
+  .coeur-vide {
     opacity: 1;
-    color:#9474FF;
+    position: absolute;
+    font-size: 25px;
+    right: 50px;
+    bottom: 20px;
   }
-  
-  .coeur-vide:hover,
-  .coeur-vide.clicked {
+  &_menu {
     opacity: 1;
-    color: #9474FF;
+    position: absolute;
+    font-size: 25px;
+    right: 50px;
+    bottom: 20px;
+    }
   }
-  
-  .coeur-vide.clicked {
-    transform: scale(1.2); /* Ajustez la mise à l'échelle selon vos préférences */
+      
+  .span-coeur:hover{
+
+    .coeur-vide{
+    opacity: 0;
+    
   }
-  
+
+  .coeur-rempli {
+    opacity: 1;
+    color: #9747FF;
+
+  }
+}
+

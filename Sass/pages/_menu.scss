@@ -33,7 +33,26 @@ h2.texte-menu {
   width: 100%;
   height: 70px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  animation: anim 1s linear forwards;
 }
+
+
+@media (max-width: 1024px) {
+  .fond-blanc.retard2:hover h4,
+  .fond-blanc.retard2:hover p,
+  .fond-blanc.retard1:hover h4,
+  .fond-blanc.retard1:hover p,
+  .fond-blanc.retard3:hover h4,
+  .fond-blanc.retard3:hover p {
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
 
 .fond-blanc-position {
   display: flex;
@@ -47,6 +66,7 @@ h2.texte-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .marge-h {
@@ -150,6 +170,49 @@ z-index: 1;
     position: relative;
     top: 30px;
 }
+
+  
+
+
+/*ANIMATION VALIDE*/
+
+.icone-check {
+    opacity: 0;
+    display: flex;
+    background-color: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 84px;
+    height: 72px;
+    transition: opacity 0.3s;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+}
+
+.fond-blanc:hover .icone-check {
+  opacity: 1;
+}
+
+.icone-check .fa-circle-check {
+  color: #99E2D0;
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ /*TABLETTE*/
+
+ @media (min-width: 769px) and (max-width: 1023px) {
+    
+ }
+
+ /*DESKTOP*/
 
 @media screen and (min-width: 1024px) {
 

@@ -17,14 +17,19 @@ $like-backgroud: linear-gradient($primaire-color, $secondaire-color);
     color: white;
     background:$btn-background;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     border: 1px;
     border-radius: 20px;
-    height: 40px;
+    height: 45px;
     width: 190px;
-    transition-property: transform;
+    font-size: 14px;
+    font-weight: 500;
+    transition-property: transform, box-shadow;
     &:hover {
-        transform: scale(1.01);
+        transform: scale(1.00);
          filter: brightness(1.1);
+         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+         transition: 0.5s;
       
         
     }

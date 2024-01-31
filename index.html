@@ -15,11 +15,14 @@
 </head>
 
 <body class="index-page">
+    <div class="tasse">
+        <div class="poignee"></div>
+      </div>
     <header>
         <div class="logo">
             <img class="img" src="/images/myfood.png" alt="logo">
         </div>
-        <button class="btn ombre-btn"><span class="marge-logo"><i class="fas fa-map-marker-alt"></i></span>Paris,
+        <button class="btn"><span class="marge-logo"><i class="fas fa-map-marker-alt"></i></span>Paris,
             Belleville</button>
     </header>
     <section class="section-color">
@@ -63,14 +66,16 @@
                 <div class="fond-restaurant">
                     <img class="img-restaurant" src="/images/image.a.jpg" alt="image1">
                     <p class="texte-restaurant-gras">La palette du goût</p>
+                    <div class="nouveau">Nouveau</div>
                     <p class="texte-restaurant">Ménilmontant</p>
-                    <span class="span-coeur"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
+                    <span class="span-coeur"><i class="fa-regular fa-heart coeur-vide"></i><i class="fa-solid fa-heart coeur-rempli"></i></span>
                 </div>
                 <div class="fond-restaurant">
                     <img class="img-restaurant" src="/images/image.b.jpg" alt="image2">
                     <p class="texte-restaurant-gras">La note enchantée</p>
+                    <div class="nouveau">Nouveau</div>
                     <p class="texte-restaurant">Charonne</p>
-                    <span class="span-coeur"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></span>
+                    <span class="span-coeur"><i class="fa-regular fa-heart coeur-vide"></i><i class="fa-solid fa-heart coeur-rempli"></i></span>
                 </div>
             </div>
             <div class="fond-gris">
@@ -85,8 +90,8 @@
                     <img class="img-restaurant" src="/images/image.d.jpg" alt="image4">
                     <p class="texte-restaurant-gras">Le délice des sens</p>
                     <p class="texte-restaurant">Folie-Méricourt</p>
-                    <span class="span-coeur"><i class="fa-regular fa-heart heart-icon"></i><i
-                            class="fa-solid fa-heart"></i></span>
+                    <span class="span-coeur"><i class="fa-regular fa-heart coeur-vide"></i><i
+                            class="fa-solid fa-heart coeur-rempli"></i></span>
                 </div>
             </div>
             
@@ -94,12 +99,12 @@
     </main>
     <footer class="footer">
         <img class="footer-logo" src="/images/myfood.png" alt="logo"></img>
-        <nav>
-        <i class="fa fa-cutlery"></i><a href="#">Proposer un restaurant</a>
-        <i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
-        </nav>
+        <div class="footer_affichage">
+        <span><i class="fa fa-cutlery nav-link"></i></span><a href="#" class="nav-link">Proposer un restaurant</a></div>
+        <div class="footer_affichage"><span><i class="fa-solid fa-handshake-angle nav-link"></i></span><a href="#" class="nav-link">Devenir partenaire</a></div>
+       <div class="footer_affichage"> <a href="#" class="nav-link">Mentions légales</a></div>
+        <div class="footer_affichage"><a href="#" class="nav-link">Contact</a></div>
+        
     </footer>
 </body>
 

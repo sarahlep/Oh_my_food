@@ -8,9 +8,12 @@ $footer-logo-padding: 10px;
 
 .footer {
     background-color: $footer-bg-color;
-    color: $footer-text-color;
     padding: $footer-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
+
 
     &-logo {
         filter: brightness(0) invert(1);
@@ -20,46 +23,50 @@ $footer-logo-padding: 10px;
         padding: $footer-logo-padding;
         margin-top: 30px;
     }
-}
 
-  nav {
-    padding: 5px;
-    margin-top: 35px;
-    margin-bottom: 5px;
+    &_affichage {
+      display: flex;
+      align-items: center;
+      color: $white-color;
+      height: 25px;
+      gap: 10px;
   
-  }
-
-  nav a {
-    text-decoration: none;
-  color: $footer-text-color;
-  margin-left: 10px;
-  }
-
-
-nav span {
-  margin-right: 10px;
+    }
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 30px;
 }
 
 
 
-@media screen and (min-width: 768px) {
-  
+ /*TABLETTE*/
+
+ @media (min-width: 769px) and (max-width: 1023px) {
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* Autres styles pour la tablette */
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    padding: 20px;
+    /* Autres styles pour le bureau */
+  }
+
   .footer-logo {
     order: 5;
+    margin: 0px 0px 7px 20px; 
+    /* Autres styles pour le bureau spécifiquement pour .footer-logo */
   }
-    
-.footer {
-  display: flex;
-justify-content: flex-end;
-padding: 20px;
-
 }
-
-  
-
-}
-
-
-
-
-  
