@@ -98,6 +98,18 @@ h2.texte-menu {
   border-bottom: 3px solid lightgreen; /* Bordure solide de couleur noire */
 }
 
+
+
+.retard1,
+.retard2,
+.retard3
+{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
 @keyframes fadeIn {
   0% {
       opacity: 0;
@@ -109,45 +121,21 @@ h2.texte-menu {
   }
 }
 
-.retard1,
-.retard2,
-.retard3,
-.retard4
-.retard5
-.retard6
-.retard7
-.retard8
-{
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 /* Ajoutez un délai différent pour chaque élément retardé */
 .retard1 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .retard2 {
-  animation-delay: 0.6s;
-}
-
-.retard3 {
   animation-delay: 0.9s;
 }
 
-.retard4 {
-  animation-delay: 1s;
+.retard3 {
+  animation-delay: 1.5s;
 }
 
-/* Déclenchez l'animation lorsque l'élément devient visible */
-.retard1,
-.retard2,
-.retard3,
-.retard4 {
-  opacity: 1;
-  transform: translateY(0);
-}
+
+
 
 
 .main {
@@ -182,11 +170,11 @@ z-index: 1;
     background-color: #99E2D0;
     border-radius: 0px 15px 15px 0px;
     position: absolute;
-    right: 0px;
+    right: -50px;
     bottom: 0px;
     width: 84px;
     height: 72px;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, right 0.5s ease-in-out; /* Ajout de la transition pour la propriété "right" */
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -197,6 +185,7 @@ z-index: 1;
 
 .fond-blanc:hover .icone-check {
   opacity: 1;
+  right: 0;
 }
 
 .icone-check .fa-circle-check {

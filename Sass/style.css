@@ -272,6 +272,14 @@ h2.texte-menu {
   border-bottom: 3px solid lightgreen; /* Bordure solide de couleur noire */
 }
 
+.retard1,
+.retard2,
+.retard3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -282,39 +290,17 @@ h2.texte-menu {
     transform: translateY(0);
   }
 }
-.retard1,
-.retard2,
-.retard3,
-.retard4 .retard5 .retard6 .retard7 .retard8 {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.5s ease-in-out;
-}
-
 /* Ajoutez un délai différent pour chaque élément retardé */
 .retard1 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .retard2 {
-  animation-delay: 0.6s;
-}
-
-.retard3 {
   animation-delay: 0.9s;
 }
 
-.retard4 {
-  animation-delay: 1s;
-}
-
-/* Déclenchez l'animation lorsque l'élément devient visible */
-.retard1,
-.retard2,
-.retard3,
-.retard4 {
-  opacity: 1;
-  transform: translateY(0);
+.retard3 {
+  animation-delay: 1.5s;
 }
 
 .main {
@@ -344,11 +330,11 @@ h2.texte-menu {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   position: absolute;
-  right: 0px;
+  right: -50px;
   bottom: 0px;
   width: 84px;
   height: 72px;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, right 0.5s ease-in-out; /* Ajout de la transition pour la propriété "right" */
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -358,6 +344,7 @@ h2.texte-menu {
 
 .fond-blanc:hover .icone-check {
   opacity: 1;
+  right: 0;
 }
 
 .icone-check .fa-circle-check {
@@ -501,7 +488,7 @@ h2.texte-menu {
   text-decoration: none;
   color: white;
   margin-bottom: 25px;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 /*TABLETTE*/
@@ -553,75 +540,6 @@ h2.texte-menu {
   color: #9747FF;
 }
 
-.tasse {
-  position: absolute;
-  height: 140px;
-  width: 180px;
-  border: 6px solid purple;
-  top: 50%;
-  left: 45%;
-  border-radius: 0px 0px 70px 70px;
-  background: url(/images/coffee.png);
-  box-shadow: 0px 0px 0px 6px black;
-  background-repeat: repeat-x;
-  background-position: 0px 140px;
-  animation: fadeInAndOut 1s forwards, fillAndLoader 2.5s infinite, spin 1.2s linear infinite;
-  opacity: 0;
-}
-
-@keyframes fadeInAndOut {
-  0% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-@keyframes fillAndLoader {
-  0%, 100% {
-    background-position: 0px 140px;
-    opacity: 1;
-  }
-  20% {
-    background-position: -450px 100px;
-    opacity: 0.5;
-  }
-  40% {
-    background-position: -900px 50px;
-    opacity: 1;
-  }
-  80% {
-    background-position: -1350px -40px;
-    opacity: 0.5;
-  }
-  100% {
-    background-position: 0px 140px;
-    opacity: 1;
-  }
-}
-.poignee {
-  height: 70px;
-  width: 40px;
-  background-color: transparent;
-  border: 6px solid black;
-  position: relative;
-  left: 186px;
-  top: 2px;
-  border-radius: 0px 25px 80px 0px;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .menu-page {
   position: relative;
 }
@@ -642,11 +560,11 @@ h2.texte-menu {
   bottom: 20px;
 }
 
-.span-coeur:hover .coeur-vide_menu {
+.span:hover .coeur-vide_menu {
   opacity: 0;
 }
 
-.span-coeur:hover .coeur-rempli_menu {
+.span:hover .coeur-rempli_menu {
   opacity: 1;
   color: #9747FF;
 }
@@ -660,5 +578,49 @@ h2.texte-menu {
   .coeur-vide_menu {
     left: 450px;
     bottom: 45px;
+  }
+}
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 0.5s ease-out;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+}
+
+.loader_rond {
+  border: 20px solid #9356DC;
+  border-top: 20px solid black;
+  border-bottom: 20px solid black;
+  border-radius: 70%;
+  width: 150px;
+  height: 150px;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */

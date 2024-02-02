@@ -22,11 +22,11 @@
   }
 
 
-  .span-coeur:hover .coeur-vide_menu {
+  .span:hover .coeur-vide_menu {
     opacity: 0;
   }
   
-  .span-coeur:hover .coeur-rempli_menu {
+  .span:hover .coeur-rempli_menu {
     opacity: 1;
     color: #9747FF;
   }
