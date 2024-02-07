@@ -323,7 +323,7 @@ h2.texte-menu {
   top: 30px;
 }
 
-/*ANIMATION VALIDE*/
+/*SELECTEUR DE PLATS*/
 .icone-check {
   opacity: 0;
   display: flex;
@@ -528,6 +528,9 @@ h2.texte-menu {
   font-size: 25px;
   right: 50px;
   bottom: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .coeur-vide {
@@ -539,12 +542,13 @@ h2.texte-menu {
 }
 
 .span-coeur:hover .coeur-vide {
+  transition: 0.5s linear;
   opacity: 0;
 }
 
 .span-coeur:hover .coeur-rempli {
+  transition: 0.5s linear;
   opacity: 1;
-  color: #9747FF;
 }
 
 .menu-page {
@@ -557,6 +561,9 @@ h2.texte-menu {
   font-size: 25px;
   left: 240px;
   bottom: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .coeur-vide_menu {
@@ -568,12 +575,13 @@ h2.texte-menu {
 }
 
 .span:hover .coeur-vide_menu {
+  transition: 0.5s linear;
   opacity: 0;
 }
 
 .span:hover .coeur-rempli_menu {
+  transition: 0.5s linear;
   opacity: 1;
-  color: #9747FF;
 }
 
 /*DESKTOP*/
