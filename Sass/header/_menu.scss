@@ -1,16 +1,23 @@
 .position-image {
     position: relative;
     top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   
   .image-fond {
-    width: 230px;
-    height: 35px;
-    padding: 20px;
+    width: 150px;
+    height: 25px;
   }
   
   .position-logo {
     display: flex;
     justify-content: center;
+  }
+
+  .position-fleche {
+    position: fixed;
+    left: 10px;
   }
   
