@@ -332,7 +332,7 @@ h2.texte-menu {
   position: absolute;
   right: -50px;
   bottom: 0px;
-  width: 84px;
+  width: 64px;
   height: 72px;
   transition: opacity 0.3s, right 0.5s ease-in-out; /* Ajout de la transition pour la propriété "right" */
   align-items: center;
@@ -352,6 +352,7 @@ h2.texte-menu {
   background-color: white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 
 /*TABLETTE*/
@@ -394,14 +395,20 @@ h2.texte-menu {
   justify-content: center;
 }
 
+/*FLECHE*/
 .position-fleche {
   position: fixed;
   left: 10px;
 }
 
+.fa-arrow-left {
+  color: black;
+}
+
 .logo {
   display: flex;
   justify-content: center;
+  padding: 15px;
 }
 
 .marge-logo {
